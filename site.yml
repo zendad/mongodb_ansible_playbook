@@ -1,0 +1,8 @@
+---
+
+- name: mongodb-server
+  hosts: mongodb-servers
+  become: True
+
+  roles:
+      - { role: dereck.mongodb,              tags: ["mongodb"] }
